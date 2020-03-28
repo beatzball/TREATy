@@ -28,6 +28,13 @@ Get started building a React Application quickly with:
 ```shell
 $ git clone --depth=1 https://github.com/beatzball/TREATy.git <YOUR_PROJECT_NAME>
 $ cd <YOUR_PROJECT_NAME>
+$ git checkout --orphan new
+$ git commit -m "this is my first commit"
+$ git branch -D master
+$ git branch -m master
+$ git remote rm origin
+$ git remote add origin <YOUR_GIT_URL>
+$ git push -u origin master
 ```
 
 ### Installation
