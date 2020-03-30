@@ -82,10 +82,11 @@
       "jsx-single"
     ],
     "radix": true,
-    "semicolon": {
-      "severity": "error",
-      "options": "always"
-    },
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
     "switch-default": true,
     "trailing-comma": [
       false
