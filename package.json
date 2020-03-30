@@ -13,11 +13,11 @@
     "css:tw": "npx tailwind build ./tailwind.config.css -c ./tailwind.config.js -o ./public/static/css/tailwind.css",
     "css:tw:min": "postcss ./public/static/css/tailwind.css > ./public/static/css/tailwind.min.css",
     "start": "npm-run-all css:tw start:dev",
-    "start:dev": "react-scripts start",
+    "start:dev": "craco start",
     "build": "npm-run-all clean:build css:min build:prod",
-    "build:prod": "react-scripts build",
+    "build:prod": "craco build",
     "reset": "rm -rf ./build ./node_modules",
-    "test": "react-scripts test"
+    "test": "craco test"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,4 +1,6 @@
 {
+  "//": "extend",
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -19,6 +21,17 @@
     "noEmit": true,
     "jsx": "react"
   },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/**/__tests__/*",
+    "src/**/*.{test,spec}.{ts,tsx}",
+    "src/setupTests.ts"
+  ],
   "include": [
     "src"
   ]
